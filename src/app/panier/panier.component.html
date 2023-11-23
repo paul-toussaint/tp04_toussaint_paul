@@ -1,0 +1,6 @@
+<h2>Mon Panier</h2>
+<div *ngFor="let item of panierItems$ | async">
+  <h2>{{ item.nom }}</h2>
+  <p>Quantité : {{ item.quantite }}</p>
+    <button type="button">Ajouter au panier</button>
+</div>
